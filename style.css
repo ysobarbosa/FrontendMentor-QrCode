@@ -33,6 +33,7 @@ main .container img {
 main .container__text {
   width: 14rem;
   text-align: center;
+  margin: auto;
 }
 main .container__text__emphasis {
   font-size: 1rem;
