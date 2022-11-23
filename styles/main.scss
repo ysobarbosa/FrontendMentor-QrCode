@@ -1,7 +1,7 @@
 
 @import 'variables';
 
-h5, p {
+h5, p, * {
     margin: 0;
     padding: 0;
 }
@@ -9,53 +9,50 @@ h5, p {
 body {
     font-family: $font-stack;
     background-color: $light-gray;
-    padding: 0;
-    margin: 0;
-    min-height: 100vh
 }
 
-.container {
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    background-color: $white;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 18px 0px lightslategrey;
-    margin: {
-        top: 25vh
-    };
-    padding: 0.8em {
-        top: 0.6em
-    };
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
 
 
-
-
-
-    img{
+    .container {
+        background-color: $white;
+        width: 15rem;
         border-radius: 10px;
-        width: 100%;
-        max-height: 50%;
-        margin: 0;
-    }
+        box-shadow: 5px 5px 18px 0px lightslategrey;
+        padding: 0.8em {
+            top: 0.6em
+        };
 
-
-    &__text {
-        width: 95%;
-        text-align: center;
-        &__emphasis {
-            font-size: 15px;
-            font-weight: 600;
-            color: $dark-blue;
-            margin: 12px 0;
+        img{
+            border-radius: 10px;
+            width: 15rem;
+            max-height: 20rem;
+            margin: 0;
         }
 
-        &__info {
-            font-size: 12px;
-            color: $grayish-blue;
-            margin-bottom: 12px;
+
+        &__text {
+            width: 14rem;
+            text-align: center;
+
+            &__emphasis {
+                font-size: 1rem;
+                font-weight: 600;
+                color: $dark-blue;
+                margin: 12px 0;
+            }
+
+            &__info {
+                font-size: 12px;
+                color: $grayish-blue;
+                margin-bottom: 12px;
+            }
         }
     }
+
 }
